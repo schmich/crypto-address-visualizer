@@ -83,9 +83,9 @@ This extension is free forever. Donations are appreciated.
 
 <details>
     <summary>
-        <img src="assets/bch-logo.png" width="16" height="16"> Bitcoin Cash: 14QnKWFsuZwbDAc6LgSF8kjThYLwuHRJ2C
+        <img src="assets/usdc-logo.png" width="16" height="16"> USD Coin: 0x43f039Ec812a3f6b9e649853244637F1CBF85Ffa
     </summary>
-    <img src="assets/bch-qr.png">
+    <img src="assets/usdc-qr.png">
 </details>
 
 <details>
@@ -104,9 +104,9 @@ This extension is free forever. Donations are appreciated.
 
 <details>
     <summary>
-        <img src="assets/usdc-logo.png" width="16" height="16"> USD Coin: 0x43f039Ec812a3f6b9e649853244637F1CBF85Ffa
+        <img src="assets/bch-logo.png" width="16" height="16"> Bitcoin Cash: 14QnKWFsuZwbDAc6LgSF8kjThYLwuHRJ2C
     </summary>
-    <img src="assets/usdc-qr.png">
+    <img src="assets/bch-qr.png">
 </details>
 
 <details>
@@ -128,6 +128,118 @@ This extension is free forever. Donations are appreciated.
         <img src="assets/sol-logo.png" width="16" height="16"> Solana: G3MgYuKqcXwHkC5iFFfujxihqqXEoeA4H3r3YFyUBZWq
     </summary>
     <img src="assets/sol-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/algo-logo.png" width="16" height="16"> Algorand: YTJYE4ZBUWWGO7JQOSO44JZJV7QZJFLEFWDXDWV3AAF3NW3Z44GSPXKPWQ
+    </summary>
+    <img src="assets/algo-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/xtz-logo.png" width="16" height="16"> Tezos: tz1Sc1j1wnT6fmLDiBCdCZ4D4y7MrZFQogGa
+    </summary>
+    <img src="assets/xtz-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/mkr-logo.png" width="16" height="16"> Maker: 0x09e1FF58c527041d73535617b989C27a3787E992
+    </summary>
+    <img src="assets/mkr-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/aave-logo.png" width="16" height="16"> Aave: 0x01BAF46136d52Ce62dc02B84A740d32C8D5251B8
+    </summary>
+    <img src="assets/aave-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/matic-logo.png" width="16" height="16"> Polygon: 0xB3F205611acE0a660bCe412C38E58a910BED0e01
+    </summary>
+    <img src="assets/matic-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/dai-logo.png" width="16" height="16"> Dai: 0xaE396fc1Ccc3CA7b64F1639826a6988Cc55F797e
+    </summary>
+    <img src="assets/dai-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/trx-logo.png" width="16" height="16"> TRON: TWJmsiCRizDMBWdV1oWr3QwKbXRW6cb66q
+    </summary>
+    <img src="assets/trx-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/paxg-logo.png" width="16" height="16"> PAX Gold: 0x29F8fBE57aF96EDffd066860458601eaB1a82Ff5
+    </summary>
+    <img src="assets/paxg-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/sushi-logo.png" width="16" height="16"> SushiSwap: 0xBfAaad6B5CDdD575e6B9ACB492De3580ac837DDc
+    </summary>
+    <img src="assets/sushi-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/uni-logo.png" width="16" height="16"> Uniswap: 0x7e48aaC89e8b5367BA66F21A6776bF35cEA19C84
+    </summary>
+    <img src="assets/uni-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/comp-logo.png" width="16" height="16"> Compound: 0xddEB2A399fD0bB74E405dc1943E204c3c4003B68
+    </summary>
+    <img src="assets/comp-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/bat-logo.png" width="16" height="16"> Basic Attention Token: 0x9C0dE3f9bFBf2a65Bf83DCcc0FE3780fFdba2807
+    </summary>
+    <img src="assets/bat-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/grt-logo.png" width="16" height="16"> The Graph: 0x0792bFD809d5cc7828C99703376d882E7Edcb6eB
+    </summary>
+    <img src="assets/grt-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/link-logo.png" width="16" height="16"> Chainlink: 0xDb31EF2C481CBbBd38c0404152e3199C6fD287A7
+    </summary>
+    <img src="assets/link-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/nu-logo.png" width="16" height="16"> NuCypher: 0x97c43c0226006073788e1E769B6685FD20D77bf8
+    </summary>
+    <img src="assets/nu-qr.png">
+</details>
+
+<details>
+    <summary>
+        <img src="assets/usdt-logo.png" width="16" height="16"> Tether: 0xfaf5656af896C6c43C2f1689A15843ca2b07DEA7
+    </summary>
+    <img src="assets/usdt-qr.png">
 </details>
 
 ## License
