@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: monospace;
+}
+#content {
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+#title {
+    display: flex;
+    width: 100%;
+    max-width: 630px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#address-details {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-right: 10px;
+}
+#address {
+    display: inline-block;
+    font-size: 14px;
+    flex: 0 0 auto;
+    line-height: 100%;
+    margin: 3px 0;
+    cursor: pointer;
+    background: #eee;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+#address:hover {
+    background: #ddd;
+}
+#address, #details {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#details {
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+#host {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+#donate {
+    flex: 0 0 150px;
+    cursor: pointer;
+    background: #fff;
+    color: #05f;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px 0;
+    transition: all 0.2s ease;
+}
+#donate:hover {
+    background: #05f;
+    border-color: #05f;
+    color: #fff;
+}
+#visualizers {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#blockies, #jdenticon, #identicon, #qrcode {
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 150px;
+}
+#blockies, #jdenticon, #identicon {
+    margin-right: 10px;
+}

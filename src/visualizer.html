@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Address Visualizer</title>
+    <link rel="stylesheet" href="visualizer.css" integrity="sha256-gLRMIpgxnP+bFoh3vOlnVSI5GaH8pNCr7mPvXCxBhUo=">
+</head>
+<body>
+    <div id="content">
+        <div id="title">
+            <div id="address-details">
+                <div id="address"></div>
+                <div id="details">
+                    <div id="host"></div>
+                    <div id="length"></div>
+                    <div id="checksum"></div>
+                </div>
+            </div>
+            <button id="donate">Donate</button>
+        </div>
+        <div id="visualizers">
+            <canvas id="blockies" height="150" width="150"></canvas>
+            <canvas id="jdenticon" height="150" width="150"></canvas>
+            <img id="identicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" height="150" width="150">
+            <div id="qrcode" height="150" width="150"></div>
+        </div>
+    </div>
+    <script src="sha256.js" integrity="sha256-POUAE9BHbVRTy4TWo78xCm6YD0q+OECUguVdwCkJ+mo="></script>
+    <script src="blockies.js" integrity="sha256-Ms/p1Ps6sZmJaygtdwhnO745oIZwik2/aMg6kwhTvfA="></script>
+    <script src="jdenticon.js" integrity="sha256-j712ogY74WBwGAzEzwqcQtjZdUwYsPiUdpbyHkIk9ho="></script>
+    <script src="identicon.js" integrity="sha256-4x0zDxgJry3gonD+vYLLnxYlbVo7HJwX+b15LrCs5cA="></script>
+    <script src="qrcode.js" integrity="sha256-K8DfvZcAJvLTfgHAOTf9qhChGKHiO9sYDshJweYfx5I="></script>
+    <script src="visualizer.js" integrity="Ng2j8ate0KCkh683h9Y7+DLjDqP2u8smQ6OTmfec+iM="></script>
+</body>
+</html>

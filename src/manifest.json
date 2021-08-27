@@ -1,0 +1,27 @@
+{
+    "name": "Crypto Address Visualizer",
+    "short_name": "Crypto Address Visualizer",
+    "description": "Crypto Address Visualizer",
+    "version": "1",
+    "manifest_version": 3,
+    "author": "Chris Schmich <schmch@gmail.com>",
+    "homepage_url": "https://github.com/schmich/crypto-address-visualizer",
+    "offline_enabled": true,
+    "permissions": [
+        "contextMenus"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Crypto Address Visualizer",
+        "default_popup": "visualizer.html"
+    },
+    "icons": {
+        "256": "icon.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src data:"
+    },
+    "minimum_chrome_version": "88"
+}
