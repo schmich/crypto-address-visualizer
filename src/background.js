@@ -25,13 +25,11 @@ async function onVisualize(event, tab) {
 }
 
 async function onDonate() {
-    // TODO: Fix URL.
-    await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer' });
+    await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer#donate' });
 }
 
 async function onPrivacySecurity() {
-    // TODO: Fix URL.
-    await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer' });
+    await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer#privacy--security' });
 }
 
 async function onViewSourceCode() {

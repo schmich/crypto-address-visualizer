@@ -151,8 +151,7 @@ function load() {
 
     let donateEl = document.getElementById('donate');
     donateEl.addEventListener('click', async () => {
-        // TODO: Update URL.
-        await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer' });
+        await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer#donate' });
     });
 
     setTimeout(() => {
