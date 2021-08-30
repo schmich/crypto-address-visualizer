@@ -65,181 +65,206 @@ The following steps have been taken to maximize privacy and security when using 
 
 ## Donate
 
-This extension is free forever. Donations are appreciated.
+Crypto Address Visualizer is free forever. Donations are appreciated.
 
 <details>
     <summary>
-        <img src="assets/btc-logo.png" width="16" height="16"> Bitcoin: 3AMquLosfN95B7znVX4JSMTwrbps7FegKc
+        <img src="assets/btc-logo.png" width="16" height="16"> Bitcoin
     </summary>
-    <img src="assets/btc-qr.png">
+    <br>3AMquLosfN95B7znVX4JSMTwrbps7FegKc
+    <br><img src="assets/btc-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/eth-logo.png" width="16" height="16"> Ethereum: 0xDb3D8798Ac8D0Db0BF16ACd6F536fC9634253b9C
+        <img src="assets/eth-logo.png" width="16" height="16"> Ethereum
     </summary>
-    <img src="assets/eth-qr.png">
+    <br>0xDb3D8798Ac8D0Db0BF16ACd6F536fC9634253b9C
+    <br><img src="assets/eth-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/usdc-logo.png" width="16" height="16"> USD Coin: 0x43f039Ec812a3f6b9e649853244637F1CBF85Ffa
+        <img src="assets/usdc-logo.png" width="16" height="16"> USD Coin
     </summary>
-    <img src="assets/usdc-qr.png">
+    <br>0x43f039Ec812a3f6b9e649853244637F1CBF85Ffa
+    <br><img src="assets/usdc-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/ltc-logo.png" width="16" height="16"> Litecoin: MUnX5iwLDsgfh9YmJAZp3MJ8MfMiGKb7aB
+        <img src="assets/ltc-logo.png" width="16" height="16"> Litecoin
     </summary>
-    <img src="assets/ltc-qr.png">
+    <br>MUnX5iwLDsgfh9YmJAZp3MJ8MfMiGKb7aB
+    <br><img src="assets/ltc-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/ada-logo.png" width="16" height="16"> Cardano: addr1v8wa2e0u53g5j3ay0zjuq6pysmdj2gtyjzhqtadduv87q5gss9nxg
+        <img src="assets/ada-logo.png" width="16" height="16"> Cardano
     </summary>
-    <img src="assets/ada-qr.png">
+    <br>addr1v8wa2e0u53g5j3ay0zjuq6pysmdj2gtyjzhqtadduv87q5gss9nxg
+    <br><img src="assets/ada-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/bch-logo.png" width="16" height="16"> Bitcoin Cash: 14QnKWFsuZwbDAc6LgSF8kjThYLwuHRJ2C
+        <img src="assets/bch-logo.png" width="16" height="16"> Bitcoin Cash
     </summary>
-    <img src="assets/bch-qr.png">
+    <br>14QnKWFsuZwbDAc6LgSF8kjThYLwuHRJ2C
+    <br><img src="assets/bch-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/doge-logo.png" width="16" height="16"> Dogecoin: DP9rhCR4E8qQrfadfRtuc9vTimUrZBb2Zr
+        <img src="assets/doge-logo.png" width="16" height="16"> Dogecoin
     </summary>
-    <img src="assets/doge-qr.png">
+    <br>DP9rhCR4E8qQrfadfRtuc9vTimUrZBb2Zr
+    <br><img src="assets/doge-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/dot-logo.png" width="16" height="16"> Polkadot: 15yNgRV9quNLqfdGcX3y3yb2zXebiW4Dpjb6MaWgCQgW2A32
+        <img src="assets/dot-logo.png" width="16" height="16"> Polkadot
     </summary>
-    <img src="assets/dot-qr.png">
+    <br>15yNgRV9quNLqfdGcX3y3yb2zXebiW4Dpjb6MaWgCQgW2A32
+    <br><img src="assets/dot-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/sol-logo.png" width="16" height="16"> Solana: G3MgYuKqcXwHkC5iFFfujxihqqXEoeA4H3r3YFyUBZWq
+        <img src="assets/sol-logo.png" width="16" height="16"> Solana
     </summary>
-    <img src="assets/sol-qr.png">
+    <br>G3MgYuKqcXwHkC5iFFfujxihqqXEoeA4H3r3YFyUBZWq
+    <br><img src="assets/sol-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/algo-logo.png" width="16" height="16"> Algorand: YTJYE4ZBUWWGO7JQOSO44JZJV7QZJFLEFWDXDWV3AAF3NW3Z44GSPXKPWQ
+        <img src="assets/algo-logo.png" width="16" height="16"> Algorand
     </summary>
-    <img src="assets/algo-qr.png">
+    <br>YTJYE4ZBUWWGO7JQOSO44JZJV7QZJFLEFWDXDWV3AAF3NW3Z44GSPXKPWQ
+    <br><img src="assets/algo-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/xtz-logo.png" width="16" height="16"> Tezos: tz1Sc1j1wnT6fmLDiBCdCZ4D4y7MrZFQogGa
+        <img src="assets/xtz-logo.png" width="16" height="16"> Tezos
     </summary>
-    <img src="assets/xtz-qr.png">
+    <br>tz1Sc1j1wnT6fmLDiBCdCZ4D4y7MrZFQogGa
+    <br><img src="assets/xtz-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/mkr-logo.png" width="16" height="16"> Maker: 0x09e1FF58c527041d73535617b989C27a3787E992
+        <img src="assets/mkr-logo.png" width="16" height="16"> Maker
     </summary>
-    <img src="assets/mkr-qr.png">
+    <br>0x09e1FF58c527041d73535617b989C27a3787E992
+    <br><img src="assets/mkr-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/aave-logo.png" width="16" height="16"> Aave: 0x01BAF46136d52Ce62dc02B84A740d32C8D5251B8
+        <img src="assets/aave-logo.png" width="16" height="16"> Aave
     </summary>
-    <img src="assets/aave-qr.png">
+    <br>0x01BAF46136d52Ce62dc02B84A740d32C8D5251B8
+    <br><img src="assets/aave-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/matic-logo.png" width="16" height="16"> Polygon: 0xB3F205611acE0a660bCe412C38E58a910BED0e01
+        <img src="assets/matic-logo.png" width="16" height="16"> Polygon
     </summary>
-    <img src="assets/matic-qr.png">
+    <br>0xB3F205611acE0a660bCe412C38E58a910BED0e01
+    <br><img src="assets/matic-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/dai-logo.png" width="16" height="16"> Dai: 0xaE396fc1Ccc3CA7b64F1639826a6988Cc55F797e
+        <img src="assets/dai-logo.png" width="16" height="16"> Dai
     </summary>
-    <img src="assets/dai-qr.png">
+    <br>0xaE396fc1Ccc3CA7b64F1639826a6988Cc55F797e
+    <br><img src="assets/dai-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/trx-logo.png" width="16" height="16"> TRON: TWJmsiCRizDMBWdV1oWr3QwKbXRW6cb66q
+        <img src="assets/trx-logo.png" width="16" height="16"> TRON
     </summary>
-    <img src="assets/trx-qr.png">
+    <br>TWJmsiCRizDMBWdV1oWr3QwKbXRW6cb66q
+    <br><img src="assets/trx-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/paxg-logo.png" width="16" height="16"> PAX Gold: 0x29F8fBE57aF96EDffd066860458601eaB1a82Ff5
+        <img src="assets/paxg-logo.png" width="16" height="16"> PAX Gold
     </summary>
-    <img src="assets/paxg-qr.png">
+    <br>0x29F8fBE57aF96EDffd066860458601eaB1a82Ff5
+    <br><img src="assets/paxg-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/sushi-logo.png" width="16" height="16"> SushiSwap: 0xBfAaad6B5CDdD575e6B9ACB492De3580ac837DDc
+        <img src="assets/sushi-logo.png" width="16" height="16"> SushiSwap
     </summary>
-    <img src="assets/sushi-qr.png">
+    <br>0xBfAaad6B5CDdD575e6B9ACB492De3580ac837DDc
+    <br><img src="assets/sushi-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/uni-logo.png" width="16" height="16"> Uniswap: 0x7e48aaC89e8b5367BA66F21A6776bF35cEA19C84
+        <img src="assets/uni-logo.png" width="16" height="16"> Uniswap
     </summary>
-    <img src="assets/uni-qr.png">
+    <br>0x7e48aaC89e8b5367BA66F21A6776bF35cEA19C84
+    <br><img src="assets/uni-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/comp-logo.png" width="16" height="16"> Compound: 0xddEB2A399fD0bB74E405dc1943E204c3c4003B68
+        <img src="assets/comp-logo.png" width="16" height="16"> Compound
     </summary>
-    <img src="assets/comp-qr.png">
+    <br>0xddEB2A399fD0bB74E405dc1943E204c3c4003B68
+    <br><img src="assets/comp-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/bat-logo.png" width="16" height="16"> Basic Attention Token: 0x9C0dE3f9bFBf2a65Bf83DCcc0FE3780fFdba2807
+        <img src="assets/bat-logo.png" width="16" height="16"> Basic Attention Token
     </summary>
-    <img src="assets/bat-qr.png">
+    <br>0x9C0dE3f9bFBf2a65Bf83DCcc0FE3780fFdba2807
+    <br><img src="assets/bat-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/grt-logo.png" width="16" height="16"> The Graph: 0x0792bFD809d5cc7828C99703376d882E7Edcb6eB
+        <img src="assets/grt-logo.png" width="16" height="16"> The Graph
     </summary>
-    <img src="assets/grt-qr.png">
+    <br>0x0792bFD809d5cc7828C99703376d882E7Edcb6eB
+    <br><img src="assets/grt-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/link-logo.png" width="16" height="16"> Chainlink: 0xDb31EF2C481CBbBd38c0404152e3199C6fD287A7
+        <img src="assets/link-logo.png" width="16" height="16"> Chainlink
     </summary>
-    <img src="assets/link-qr.png">
+    <br>0xDb31EF2C481CBbBd38c0404152e3199C6fD287A7
+    <br><img src="assets/link-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/nu-logo.png" width="16" height="16"> NuCypher: 0x97c43c0226006073788e1E769B6685FD20D77bf8
+        <img src="assets/nu-logo.png" width="16" height="16"> NuCypher
     </summary>
-    <img src="assets/nu-qr.png">
+    <br>0x97c43c0226006073788e1E769B6685FD20D77bf8
+    <br><img src="assets/nu-qr.png"><br>
 </details>
 
 <details>
     <summary>
-        <img src="assets/usdt-logo.png" width="16" height="16"> Tether: 0xfaf5656af896C6c43C2f1689A15843ca2b07DEA7
+        <img src="assets/usdt-logo.png" width="16" height="16"> Tether
     </summary>
-    <img src="assets/usdt-qr.png">
+    <br>0xfaf5656af896C6c43C2f1689A15843ca2b07DEA7
+    <br><img src="assets/usdt-qr.png"><br>
 </details>
 
 ## License
