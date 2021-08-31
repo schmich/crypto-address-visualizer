@@ -21,7 +21,7 @@
         "256": "icon.png"
     },
     "content_security_policy": {
-        "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src data:"
+        "extension_pages": "default-src 'none'; base-uri 'none'; child-src 'none'; connect-src 'none'; font-src 'none'; form-action 'none'; frame-ancestors 'none'; frame-src 'none'; img-src data:; media-src 'none'; object-src 'none'; require-trusted-types-for 'script'; script-src 'self'; style-src 'self'; worker-src 'none'"
     },
     "minimum_chrome_version": "88"
 }
