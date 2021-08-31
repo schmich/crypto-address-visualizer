@@ -1,14 +1,8 @@
 async function onVisualize(event, tab) {
     let { selectionText } = event;
-    let { url, favIconUrl } = tab;
+    let { url } = tab;
 
-    let json = JSON.stringify({
-        selectionText,
-        url,
-        faviconUrl: favIconUrl
-    });
-
-    let payload = btoa(encodeURIComponent(json));
+    let payload = btoa(encodeURIComponent(JSON.stringify({ text: selectionText, url })));
     let pageURL = chrome.runtime.getURL('visualizer.html');
     let popupURL = `${pageURL}?${payload}`;
 

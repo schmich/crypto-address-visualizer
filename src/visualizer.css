@@ -5,7 +5,23 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    font-family: monospace;
+}
+.btn {
+    cursor: pointer;
+    background: #fff;
+    color: #05f;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #05f;
+    border-color: #05f;
+    color: #fff;
 }
 #content {
     height: max-content;
@@ -20,6 +36,23 @@ html, body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+#no-address, #with-address {
+    display: none;
+}
+#no-address {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+#no-address.enabled {
+    display: flex;
+}
+#with-address.enabled {
+    display: block;
+}
 #title {
     display: flex;
     width: 100%;
@@ -31,6 +64,7 @@ html, body {
     flex: 1 1 auto;
     min-width: 0;
     margin-right: 10px;
+    font-family: monospace;
 }
 #address {
     display: inline-block;
@@ -66,19 +100,6 @@ html, body {
 }
 #donate {
     flex: 0 0 150px;
-    cursor: pointer;
-    background: #fff;
-    color: #05f;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 10px 0;
-    transition: all 0.2s ease;
-}
-#donate:hover {
-    background: #05f;
-    border-color: #05f;
-    color: #fff;
 }
 #visualizers {
     margin-top: 5px;

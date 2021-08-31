@@ -1,8 +1,7 @@
 function getAddressInfo() {
     let defaults = {
-        address: 'Click to set crypto address',
-        host: null,
-        faviconUrl: null
+        address: null,
+        host: null
     };
 
     if (!window.location.search) {
@@ -14,19 +13,18 @@ function getAddressInfo() {
         return defaults;
     }
 
-    let { selectionText, url, faviconUrl } = {
-        selectionText: '',
+    let { text, url } = {
+        text: '',
         url: null,
-        faviconUrl: null,
         ...JSON.parse(decodeURIComponent(atob(encodedPayload)))
     };
 
     let address = '';
-    let matches = selectionText.match(/[a-z0-9:]{20,255}/i);
+    let matches = text.match(/[a-z0-9:]{20,255}/i);
     if (matches) {
         address = matches[0];
     } else {
-        address = selectionText.trim();
+        address = text.trim();
     }
 
     let host = null;
@@ -38,8 +36,7 @@ function getAddressInfo() {
 
     return {
         address,
-        host,
-        faviconUrl
+        host
     };
 }
 
@@ -53,7 +50,6 @@ function getBytes(str) {
     return bytes;
 }
 
-// From https://gist.github.com/bryc/8a0885a4be58b6bbf0ec54c7758c0841.
 function fletcher16(buf) {
     var sum1 = 0xff, sum2 = 0xff;
     var i = 0;
@@ -117,8 +113,37 @@ function updateVisualizers(content) {
     }
 }
 
-function load() {
-    let { address, host } = getAddressInfo();
+function autosizeWindow() {
+    setTimeout(() => {
+        let { width: bodyWidth, height: bodyHeight } = document.body.getBoundingClientRect();
+        let { width: contentWidth, height: contentHeight } = document.getElementById('content').getBoundingClientRect();
+        document.body.style.height = `${contentHeight}px`;
+        document.body.style.width = `${contentWidth}px`;
+        window.resizeBy(contentWidth - bodyWidth, contentHeight - bodyHeight);
+    }, 10);
+}
+
+function loadNoAddress() {
+    let noAddressEl = document.getElementById('no-address');
+    noAddressEl.classList.add('enabled');
+
+    let specifyAddressEl = document.getElementById('specify-address');
+    specifyAddressEl.addEventListener('click', () => {
+        let newAddress = prompt('Specify crypto address');
+        if (!newAddress) {
+            return;
+        }
+
+        window.location.search = btoa(encodeURIComponent(JSON.stringify({
+            text: newAddress,
+            url: null
+        })));
+    });
+}
+
+function loadWithAddress(address, host) {
+    let withAddressEl = document.getElementById('with-address');
+    withAddressEl.classList.add('enabled');
 
     let hostEl = document.getElementById('host');
     if (host) {
@@ -148,19 +173,18 @@ function load() {
     });
 
     updateVisualizers(address);
+}
 
-    let donateEl = document.getElementById('donate');
-    donateEl.addEventListener('click', async () => {
-        await chrome.tabs.create({ url: 'https://github.com/schmich/crypto-address-visualizer#donate' });
-    });
+function load() {
+    let { address, host } = getAddressInfo();
 
-    setTimeout(() => {
-        let { width: bodyWidth, height: bodyHeight } = document.body.getBoundingClientRect();
-        let { width: contentWidth, height: contentHeight } = document.getElementById('content').getBoundingClientRect();
-        document.body.style.height = `${contentHeight}px`;
-        document.body.style.width = `${contentWidth}px`;
-        window.resizeBy(contentWidth - bodyWidth, contentHeight - bodyHeight);
-    }, 10);
+    if (!address) {
+        loadNoAddress();
+    } else {
+        loadWithAddress(address, host);
+    }
+
+    autosizeWindow();
 }
 
 load();

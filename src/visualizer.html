@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Crypto Address Visualizer</title>
-    <link rel="stylesheet" href="visualizer.css" integrity="sha256-gLRMIpgxnP+bFoh3vOlnVSI5GaH8pNCr7mPvXCxBhUo=">
+    <link rel="stylesheet" href="visualizer.css" integrity="sha256-hqtJUjX7YahPI7wI52IW5IgD2jTah2cnnKazgDL39t8=">
 </head>
 <body>
     <div id="content">
-        <div id="title">
-            <div id="address-details">
-                <div id="address"></div>
-                <div id="details">
-                    <div id="host"></div>
-                    <div id="length"></div>
-                    <div id="checksum"></div>
-                </div>
-            </div>
-            <button id="donate">Donate</button>
+        <div id="no-address">
+            To visualize a crypto address, choose one:
+            <a class="btn" href="https://github.com/schmich/crypto-address-visualizer/#quick-start" target="_blank">View Quick Start Guide</a>
+            <button id="specify-address" class="btn">Specify an Address</button>
         </div>
-        <div id="visualizers">
-            <canvas id="blockies" height="150" width="150"></canvas>
-            <canvas id="jdenticon" height="150" width="150"></canvas>
-            <img id="identicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" height="150" width="150">
-            <div id="qrcode" height="150" width="150"></div>
+        <div id="with-address">
+            <div id="title">
+                <div id="address-details">
+                    <div id="address"></div>
+                    <div id="details">
+                        <div id="host"></div>
+                        <div id="length"></div>
+                        <div id="checksum"></div>
+                    </div>
+                </div>
+                <a id="donate" class="btn" href="https://github.com/schmich/crypto-address-visualizer#donate" target="_blank">Donate</a>
+            </div>
+            <div id="visualizers">
+                <canvas id="blockies" height="150" width="150"></canvas>
+                <canvas id="jdenticon" height="150" width="150"></canvas>
+                <img id="identicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" height="150" width="150">
+                <div id="qrcode" height="150" width="150"></div>
+            </div>
         </div>
     </div>
-    <script src="sha256.js" integrity="sha256-POUAE9BHbVRTy4TWo78xCm6YD0q+OECUguVdwCkJ+mo="></script>
+    <script src="sha256.js" integrity="sha256-/3z1mG5LULvzfsNQUIiKAFm7VvpzLzWJs5aywl7G60c="></script>
     <script src="blockies.js" integrity="sha256-Ms/p1Ps6sZmJaygtdwhnO745oIZwik2/aMg6kwhTvfA="></script>
     <script src="jdenticon.js" integrity="sha256-j712ogY74WBwGAzEzwqcQtjZdUwYsPiUdpbyHkIk9ho="></script>
     <script src="identicon.js" integrity="sha256-4x0zDxgJry3gonD+vYLLnxYlbVo7HJwX+b15LrCs5cA="></script>
     <script src="qrcode.js" integrity="sha256-K8DfvZcAJvLTfgHAOTf9qhChGKHiO9sYDshJweYfx5I="></script>
-    <script src="visualizer.js" integrity="sha256-7A7wbEKagSo13YzNsJAjSqKHGDaf1/FLzcLzJadGg3M="></script>
+    <script src="visualizer.js" integrity="sha256-ngpF1QJ6ztkaa43GsPYUEqQVpsA/Haxws4um4ZRIFwQ="></script>
 </body>
 </html>
