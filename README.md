@@ -15,15 +15,15 @@ Install the extension for your browser:
 
 ## Quick Start
 
-**Select your crypto wallet address text on any website**
+**1. Select your crypto wallet address text on any website**
 
 <img src="assets/screenshot-address.png">
 
-**Right-click and select _Crypto Address Visualizer_**
+**2. Right-click and select _Crypto Address Visualizer_**
 
 <img src="assets/screenshot-context-menu.png">
 
-**Repeat across websites and compare images and checksums to ensure addresses are the same**
+**3. Repeat across websites and compare images and checksums to ensure addresses are the same**
 
 <img src="assets/screenshot-visualizer.png">
 

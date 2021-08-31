@@ -10,7 +10,7 @@ async function onVisualize(event, tab) {
 
     let payload = btoa(encodeURIComponent(json));
     let pageURL = chrome.runtime.getURL('visualizer.html');
-    let popupURL = `${pageURL}#${payload}`;
+    let popupURL = `${pageURL}?${payload}`;
 
     let options = {
         url: popupURL,

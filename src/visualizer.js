@@ -5,11 +5,11 @@ function getAddressInfo() {
         faviconUrl: null
     };
 
-    if (!window.location.hash) {
+    if (!window.location.search) {
         return defaults;
     }
 
-    let encodedPayload = window.location.hash.substring(1);
+    let encodedPayload = window.location.search.substring(1);
     if (!encodedPayload) {
         return defaults;
     }
@@ -33,7 +33,7 @@ function getAddressInfo() {
     try {
         host = (new URL(url)).host;
     } catch {
-        // Ignore.
+        // Fall back to null.
     }
 
     return {
