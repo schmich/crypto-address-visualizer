@@ -40,14 +40,21 @@ function getAddressInfo() {
     };
 }
 
-function getBytes(str) {
-    var bytes = [];
-    for(var i = 0; i < str.length; i++) {
-        var char = str.charCodeAt(i);
-        bytes.push(char >>> 8);
-        bytes.push(char & 0xFF);
+function padLeft(str, width, pad) {
+    let prefix = '';
+    for (let count = width - str.length; count > 0; count--) {
+        prefix += pad;
     }
-    return bytes;
+
+    return `${prefix}${str}`;
+}
+
+function makeDigit(hexDigit) {
+    let square = document.createElement('div');
+    square.classList.add('digit');
+    square.classList.add(`digit-${hexDigit}`);
+    square.innerText = hexDigit;
+    return square;
 }
 
 function fletcher16(buf) {
@@ -69,21 +76,7 @@ function fletcher16(buf) {
     return sum2 << 8 | sum1;
 }
 
-function padLeft(str, width, pad) {
-    let prefix = '';
-    for (let count = width - str.length; count > 0; count--) {
-        prefix += pad;
-    }
-
-    return `${prefix}${str}`;
-}
-
 function updateVisualizers(content) {
-    let bytes = getBytes(content);
-    let checksum = padLeft(fletcher16(bytes).toString(16), 4, '0');
-    let checksumEl = document.getElementById('checksum');
-    checksumEl.innerText = `checksum:${checksum}`;
-
     let lengthEl = document.getElementById('length');
     lengthEl.innerText = `length:${content.length}`;
 
@@ -110,6 +103,27 @@ function updateVisualizers(content) {
             width: 150,
             height: 150
         });
+    }
+
+    // Remove existing checksum digits.
+    for (let digitEl of document.querySelectorAll('.digit')) {
+        digitEl.parentElement.removeChild(digitEl);
+    }
+
+    let bytes = new TextEncoder().encode(content);
+
+    let crc16El = document.getElementById('crc16');
+    let crc16Sum = padLeft(crc16(bytes).toString(16), 4, '0');
+    for (let i = crc16Sum.length - 1; i >= 0; i--) {
+        let square = makeDigit(crc16Sum[i]);
+        crc16El.prepend(square);
+    }
+
+    let fletcher16El = document.getElementById('fletcher16');
+    let fletcher16Sum = padLeft(fletcher16(bytes).toString(16), 4, '0');
+    for (let digit of fletcher16Sum) {
+        let square = makeDigit(digit);
+        fletcher16El.appendChild(square);
     }
 }
 

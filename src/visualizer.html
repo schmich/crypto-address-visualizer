@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Crypto Address Visualizer</title>
-    <link rel="stylesheet" href="visualizer.css" integrity="sha256-hqtJUjX7YahPI7wI52IW5IgD2jTah2cnnKazgDL39t8=">
+    <link rel="stylesheet" href="visualizer.css" integrity="sha256-7Y2e6swup+GtPNqd9EI/KcuN9wC16XIC/KIt+AO/+94=">
 </head>
 <body>
     <div id="content">
@@ -19,7 +19,6 @@
                     <div id="details">
                         <div id="host"></div>
                         <div id="length"></div>
-                        <div id="checksum"></div>
                     </div>
                 </div>
                 <a id="donate" class="btn" href="https://github.com/schmich/crypto-address-visualizer#donate" target="_blank">Donate</a>
@@ -30,13 +29,18 @@
                 <img id="identicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" height="150" width="150">
                 <div id="qrcode" height="150" width="150"></div>
             </div>
+            <div id="checksums">
+                <div class="checksum" id="crc16"><span>crc16</span></div>
+                <div class="checksum" id="fletcher16"><span>fletcher16</span></div>
+            </div>
         </div>
     </div>
     <script src="sha256.js" integrity="sha256-/3z1mG5LULvzfsNQUIiKAFm7VvpzLzWJs5aywl7G60c="></script>
+    <script src="crc.js" integrity="sha256-/PfudVRPbWM5CTWmkETu2XQHZ+rsYg+M23mNmoJey6Q="></script>
     <script src="blockies.js" integrity="sha256-Ms/p1Ps6sZmJaygtdwhnO745oIZwik2/aMg6kwhTvfA="></script>
     <script src="jdenticon.js" integrity="sha256-j712ogY74WBwGAzEzwqcQtjZdUwYsPiUdpbyHkIk9ho="></script>
     <script src="identicon.js" integrity="sha256-4x0zDxgJry3gonD+vYLLnxYlbVo7HJwX+b15LrCs5cA="></script>
     <script src="qrcode.js" integrity="sha256-K8DfvZcAJvLTfgHAOTf9qhChGKHiO9sYDshJweYfx5I="></script>
-    <script src="visualizer.js" integrity="sha256-ngpF1QJ6ztkaa43GsPYUEqQVpsA/Haxws4um4ZRIFwQ="></script>
+    <script src="visualizer.js" integrity="sha256-GSz4a2K2T5cyeJyoJDMVtRMgfwr23Y4FHG0idfSgU0w="></script>
 </body>
 </html>

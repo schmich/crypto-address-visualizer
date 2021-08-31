@@ -12,7 +12,7 @@ async function onVisualize(event, tab) {
         type: chrome.windows.WindowType.POPUP,
         state: chrome.windows.WindowState.NORMAL,
         width: 667,
-        height: 267
+        height: 296
     };
 
     await chrome.windows.create(options);
