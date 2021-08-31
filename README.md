@@ -2,22 +2,30 @@
 
 Crypto Address Visualizer is a browser extension that gives you extra confidence when copy-pasting crypto wallet addresses between online crypto services by enabling you to compare addresses visually with multiple images.
 
-**Supported browsers:**
+## Installation
 
-<img src="assets/chrome.png" width="14" height="14"> Chrome: *Support coming soon*  \
+Install the extension for your browser:
+
+<img src="assets/chrome.png" width="14" height="14"> Chrome: [Install extension](https://chrome.google.com/webstore/detail/crypto-address-visualizer/fbobbccllnpjhnmhaekkggngkomifhhp/)  \
 <img src="assets/edge.png" width="14" height="14"> Edge: *Support coming soon*  \
 <img src="assets/brave.png" width="14" height="14"> Brave: *Support coming soon*  \
 <img src="assets/vivaldi.png" width="14" height="14"> Vivaldi: *Support coming soon*  \
 <img src="assets/opera.png" width="14" height="14"> Opera: *Support coming soon*  \
 <img src="assets/firefox.png" width="14" height="14"> Firefox: *Support coming when Firefox supports [Manifest v3](https://blog.mozilla.org/addons/2021/05/27/manifest-v3-update/)*
 
-## Overview
+## Quick Start
 
-...
+**Select your crypto wallet address text on any website**
 
-## Visualizations
+<img src="assets/screenshot-address.png">
 
-...
+**Right-click and select _Crypto Address Visualizer_**
+
+<img src="assets/screenshot-context-menu.png">
+
+**Repeat across websites and compare images and checksums to ensure addresses are the same**
+
+<img src="assets/screenshot-visualizer.png">
 
 ## Privacy & Security
 
@@ -27,41 +35,39 @@ The following steps have been taken to maximize privacy and security when using 
 
     The full source code for this extension is available in the [crypto-address-visualizer repository](https://github.com/schmich/crypto-address-visualizer/tree/master/src).
 
-2. **This extension has no tracking, analytics, or cookies**
-
-    This extension has no ads, no tracking, no analytics, and no cookies.
-
-3. **This extension cannot make external requests**
+1. **This extension _cannot_ make external requests**
 
     Due to a very strict [content security policy](https://developers.google.com/web/fundamentals/security/csp), this extension *cannot* make external requests, so it cannot send information to or receive information from any external service. See `content_security_policy` in [manifest.json](src/manifest.json).
 
-4. **This extension does not import any external assets**
-
-    JS, CSS
-
-5. **This extension has no library references or dependencies**
-
-    All required source has been copied.
-
-6. **All loaded assets have subresource integrity checksums**
-
-    SRI, link to visualizer.html
-
-7. **This extension runs fully offline**
-
-    This extension is [offline enabled](https://developer.chrome.com/docs/apps/manifest/offline_enabled/) and does not need internet connectivity to function. See `offline_enabled` in [manifest.json](src/manifest.json).
-
-8. **This extension only requires one single permission**
+1. **This extension only requires one single permission**
 
     Browser extensions must [declare all permissions](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) necessary to function. This extension only requires the [contextMenus permission](https://developer.chrome.com/docs/extensions/reference/contextMenus/), meaning its scope and capabilities are extremely limited. See `permissions` in [manifest.json](src/manifest.json).
 
-9. **This extension cannot read or edit content on any page**
+1. **This extension _cannot_ read or edit content on any page**
 
-    Related to the previous point, due to permissions limitations, this extension cannot read or edit content on any page you visit. It has no access to your user profile or any of your personal data, public or private. It *only* has access to the text you select and provide to it through the context menu.
+    Related to the previous point, due to permissions limitations, this extension cannot read or edit content on any page you visit. It has no access to your user profile or any of your personal data, public or private. It has no access to your clipboard.
 
-10. **This extension does not store any data**
+    It *only* has access to the text you select and provide to it through the context menu.
 
-    This extension does not use local storage or any extension storage of any kind.
+1. **This extension has zero tracking, zero analytics, and zero cookies**
+
+    No Google Analytics. No social media tracking. No marketing pixels. Nothing.
+
+1. **This extension runs fully offline**
+
+    This extension is [offline enabled](https://developer.chrome.com/docs/apps/manifest/offline_enabled/) and does not need internet connectivity to function. See `offline_enabled` in [manifest.json](src/manifest.json).
+
+1. **This extension does not store any data**
+
+    This extension does not use local storage or extension storage of any kind. Nothing is saved to or loaded from disk. This extension operates entirely in memory.
+
+1. **This extension does not import any external assets**
+
+    All assets (HTML, CSS, JavaScript, images) are packaged and included with the extension at the time of publishing. No external assets are requested or included at runtime.
+
+1. **All loaded assets have subresource integrity checksums**
+
+    All assets loaded in the visualizer are protected with [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to ensure they were not manipulated or tampered with between development, packaging, distribution, installation, and runtime. See [visualizer.html](src/visualizer.html) for details.
 
 ## Donate
 
