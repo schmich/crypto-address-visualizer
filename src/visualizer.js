@@ -184,6 +184,12 @@ function load() {
         loadWithAddress(address, host);
     }
 
+    window.addEventListener('keydown', ({ code }) => {
+        if (code == 'Escape') {
+            window.close();
+        }
+    });
+
     autosizeWindow();
 }
 
