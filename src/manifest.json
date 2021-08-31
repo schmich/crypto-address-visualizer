@@ -1,7 +1,7 @@
 {
     "name": "Crypto Address Visualizer",
     "short_name": "Crypto Address Visualizer",
-    "description": "Crypto Address Visualizer",
+    "description": "Compare copy-pasted crypto addresses visually across services with images and checksums.",
     "version": "1",
     "manifest_version": 3,
     "author": "Chris Schmich <schmch@gmail.com>",
