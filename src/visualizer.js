@@ -61,15 +61,15 @@ function updateVisualizers(content) {
     let lengthEl = document.getElementById('length');
     lengthEl.innerText = `length:${content.length}`;
 
-    let blockiesSeed = sha256(encodeURIComponent(`${content}:blockies`));
+    let blockiesSeed = sha3_512(encodeURIComponent(`${content}:blockies`));
     let blockiesEl = document.getElementById('blockies');
     renderIcon({ seed: blockiesSeed, size: 30, scale: 5 }, blockiesEl);
 
-    let jdenticonContent = sha256(encodeURIComponent(`${content}:jdenticon`));
+    let jdenticonContent = sha3_512(encodeURIComponent(`${content}:jdenticon`));
     let jdenticonEl = document.getElementById('jdenticon');
     jdenticon.drawIcon(jdenticonEl.getContext('2d'), jdenticonContent, 150, { padding: 0 });
 
-    let identiconHash = sha256(encodeURIComponent(`${content}:identicon`));
+    let identiconHash = sha3_512(encodeURIComponent(`${content}:identicon`));
     let identiconEl = document.getElementById('identicon');
     let identiconData = new Identicon(identiconHash, { format: 'svg' }).toString();
     identiconEl.setAttribute('src', `data:image/svg+xml;base64,${identiconData}`);

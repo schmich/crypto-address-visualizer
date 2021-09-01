@@ -121,14 +121,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3px;
     margin-top: 10px;
     position: relative;
-    left: -35px;
+    left: -27px;
 }
 #checksum span {
     font: 13px monospace;
     font-weight: bold;
-    margin: 0 5px;
+    margin-right: 15px;
 }
 #checksum .digit {
     width: 32px;
