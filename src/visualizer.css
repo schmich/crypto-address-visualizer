@@ -117,84 +117,82 @@ html, body {
 #blockies, #jdenticon, #identicon {
     margin-right: 10px;
 }
-#checksums {
-    margin-top: 10px;
+#checksum {
     display: flex;
-    justify-content: space-between;
-}
-.checksum {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 3px;
+    margin-top: 10px;
+    position: relative;
+    left: -35px;
 }
-.checksum span {
+#checksum span {
     font: 13px monospace;
     font-weight: bold;
     margin: 0 5px;
 }
-.checksum .digit {
+#checksum .digit {
     width: 32px;
-    height: 24px;
+    height: 32px;
     border: 1px solid #fff0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font: 13px monospace;
+    font: 14px monospace;
     font-weight: bold;
 }
-.checksum .digit-0 {
+#checksum .digit-0 {
     color: #fff;
     background: #000;
 }
-.checksum .digit-1 {
+#checksum .digit-1 {
     color: #fff;
     background: #575757;
 }
-.checksum .digit-2 {
+#checksum .digit-2 {
     background: #a0a0a0;
 }
-.checksum .digit-3 {
+#checksum .digit-3 {
     background: #fff;
     border-color: #ddd;
 }
-.checksum .digit-4 {
+#checksum .digit-4 {
     color: #fff;
     background: #2a4bd7;
 }
-.checksum .digit-5 {
+#checksum .digit-5 {
     color: #fff;
     background: #1d6914;
 }
-.checksum .digit-6 {
+#checksum .digit-6 {
     color: #fff;
     background: #814a19;
 }
-.checksum .digit-7 {
+#checksum .digit-7 {
     color: #fff;
     background: #8126c0;
 }
-.checksum .digit-8 {
+#checksum .digit-8 {
     background: #9dafff;
 }
-.checksum .digit-9 {
+#checksum .digit-9 {
     background: #81c57a;
 }
-.checksum .digit-a {
+#checksum .digit-a {
     background: #e9debb;
 }
-.checksum .digit-b {
+#checksum .digit-b {
     color: #fff;
     background: #ad2323;
 }
-.checksum .digit-c {
+#checksum .digit-c {
     background: #29d0d0;
 }
-.checksum .digit-d {
+#checksum .digit-d {
     background: #ffee33;
 }
-.checksum .digit-e {
+#checksum .digit-e {
     background: #ff9233;
 }
-.checksum .digit-f {
+#checksum .digit-f {
     background: #ffcdf3;
 }

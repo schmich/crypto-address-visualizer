@@ -57,25 +57,6 @@ function makeDigit(hexDigit) {
     return square;
 }
 
-function fletcher16(buf) {
-    var sum1 = 0xff, sum2 = 0xff;
-    var i = 0;
-    var len = buf.length;
-
-    while (len) {
-        var tlen = len > 20 ? 20 : len;
-        len -= tlen;
-        do {
-            sum2 += sum1 += buf[i++];
-        } while (--tlen);
-        sum1 = (sum1 & 0xff) + (sum1 >> 8);
-        sum2 = (sum2 & 0xff) + (sum2 >> 8);
-    }
-    sum1 = (sum1 & 0xff) + (sum1 >> 8);
-    sum2 = (sum2 & 0xff) + (sum2 >> 8);
-    return sum2 << 8 | sum1;
-}
-
 function updateVisualizers(content) {
     let lengthEl = document.getElementById('length');
     lengthEl.innerText = `length:${content.length}`;
@@ -111,19 +92,11 @@ function updateVisualizers(content) {
     }
 
     let bytes = new TextEncoder().encode(content);
-
-    let crc16El = document.getElementById('crc16');
-    let crc16Sum = padLeft(crc16(bytes).toString(16), 4, '0');
-    for (let i = crc16Sum.length - 1; i >= 0; i--) {
-        let square = makeDigit(crc16Sum[i]);
-        crc16El.prepend(square);
-    }
-
-    let fletcher16El = document.getElementById('fletcher16');
-    let fletcher16Sum = padLeft(fletcher16(bytes).toString(16), 4, '0');
-    for (let digit of fletcher16Sum) {
+    let checksum = padLeft(crc32(bytes).toString(16), 8, '0');
+    let checksumEl = document.getElementById('checksum');
+    for (let digit of checksum) {
         let square = makeDigit(digit);
-        fletcher16El.appendChild(square);
+        checksumEl.appendChild(square);
     }
 }
 
