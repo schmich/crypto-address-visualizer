@@ -25,11 +25,13 @@ Install the extension for your browser:
 
 **3. Repeat across websites and compare images and checksums to ensure addresses are the same**
 
+When comparing visualizations, everything should be identical, though hosts can be different if the addresses are on different websites.
+
 <img src="assets/screenshot-visualizer.png">
 
 ## Privacy & Security
 
-The following steps have been taken to maximize privacy and security when using this extension:
+The following steps have been taken to maximize privacy and security when using Crypto Address Visualizer:
 
 1. **This extension is fully open source**
 
@@ -61,13 +63,15 @@ The following steps have been taken to maximize privacy and security when using 
 
     This extension does not use local storage or extension storage of any kind. Nothing is saved to or loaded from disk. This extension operates entirely in memory.
 
-1. **This extension does not import any external assets**
+1. **This extension does not import any external assets at runtime**
 
     All assets (HTML, CSS, JavaScript, images) are packaged and included with the extension at the time of publishing. No external assets are requested or included at runtime.
 
+    For visualization, parts of the following libraries are copied and packaged with this extension: [emn178/js-sha3](https://github.com/emn178/js-sha3), [emn178/js-crc](https://github.com/emn178/js-crc), [dmester/jdenticon](https://github.com/dmester/jdenticon), [stewartlord/identicon.js](https://github.com/stewartlord/identicon.js), [download13/blockies](https://github.com/download13/blockies), and [davidshimjs/qrcodejs](https://github.com/davidshimjs/qrcodejs).
+
 1. **All loaded assets have subresource integrity checksums**
 
-    All assets loaded in the visualizer are protected with [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to ensure they were not manipulated or tampered with between development, packaging, distribution, installation, and runtime. See [visualizer.html](src/visualizer.html) for details.
+    All assets loaded in the visualizer are protected with [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to ensure they were not manipulated or tampered with between development, packaging, distribution, installation, and runtime. See the `integrity` attributes in [visualizer.html](src/visualizer.html) for details.
 
 ## Donate
 
