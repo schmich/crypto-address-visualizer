@@ -58,9 +58,6 @@ function makeDigit(hexDigit) {
 }
 
 function updateVisualizers(content) {
-    let lengthEl = document.getElementById('length');
-    lengthEl.innerText = `length:${content.length}`;
-
     let blockiesSeed = sha3_512(encodeURIComponent(`${content}:blockies`));
     let blockiesEl = document.getElementById('blockies');
     renderIcon({ seed: blockiesSeed, size: 30, scale: 5 }, blockiesEl);
@@ -94,9 +91,15 @@ function updateVisualizers(content) {
     let bytes = new TextEncoder().encode(content);
     let checksum = padLeft(crc32(bytes).toString(16), 8, '0');
     let checksumEl = document.getElementById('checksum');
-    for (let digit of checksum) {
+    for (let i = checksum.length - 1; i >= 0; i--) {
+        let square = makeDigit(checksum[i]);
+        checksumEl.prepend(square);
+    }
+
+    let lengthEl = document.getElementById('length');
+    for (let digit of content.length.toString()) {
         let square = makeDigit(digit);
-        checksumEl.appendChild(square);
+        lengthEl.appendChild(square);
     }
 }
 

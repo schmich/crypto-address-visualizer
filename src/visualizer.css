@@ -113,87 +113,90 @@ html, body {
     outline: 0;
     width: 150px;
     height: 150px;
+    image-rendering: pixelated;
 }
 #blockies, #jdenticon, #identicon {
     margin-right: 10px;
 }
-#checksum {
+#checksum-length {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.digits {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    margin-top: 10px;
-    position: relative;
-    left: -27px;
+    gap: 2px;
 }
-#checksum span {
+.digits span {
     font: 13px monospace;
     font-weight: bold;
-    margin-right: 15px;
+    margin: 0 10px;
 }
-#checksum .digit {
-    width: 32px;
-    height: 32px;
+.digit {
+    width: 24px;
+    height: 24px;
     border: 1px solid #fff0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font: 14px monospace;
+    font: 12px monospace;
     font-weight: bold;
 }
-#checksum .digit-0 {
+.digit-0 {
     color: #fff;
     background: #000;
 }
-#checksum .digit-1 {
+.digit-1 {
     color: #fff;
     background: #575757;
 }
-#checksum .digit-2 {
+.digit-2 {
     background: #a0a0a0;
 }
-#checksum .digit-3 {
+.digit-3 {
     background: #fff;
     border-color: #ddd;
 }
-#checksum .digit-4 {
+.digit-4 {
     color: #fff;
     background: #2a4bd7;
 }
-#checksum .digit-5 {
+.digit-5 {
     color: #fff;
     background: #1d6914;
 }
-#checksum .digit-6 {
+.digit-6 {
     color: #fff;
     background: #814a19;
 }
-#checksum .digit-7 {
+.digit-7 {
     color: #fff;
     background: #8126c0;
 }
-#checksum .digit-8 {
+.digit-8 {
     background: #9dafff;
 }
-#checksum .digit-9 {
+.digit-9 {
     background: #81c57a;
 }
-#checksum .digit-a {
+.digit-a {
     background: #e9debb;
 }
-#checksum .digit-b {
+.digit-b {
     color: #fff;
     background: #ad2323;
 }
-#checksum .digit-c {
+.digit-c {
     background: #29d0d0;
 }
-#checksum .digit-d {
+.digit-d {
     background: #ffee33;
 }
-#checksum .digit-e {
+.digit-e {
     background: #ff9233;
 }
-#checksum .digit-f {
+.digit-f {
     background: #ffcdf3;
 }

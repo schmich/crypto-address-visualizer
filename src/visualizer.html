@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Crypto Address Visualizer</title>
-    <link rel="stylesheet" href="visualizer.css" integrity="sha256-JFRq4fTINctUgzTvgeI+Sih/Ji46GiQPtjDxE8fZcrA=">
+    <link rel="stylesheet" href="visualizer.css" integrity="sha256-930u2YfTBQL+nC7RmvI9MWUPFedznNiyuxSQLZa0wwA=">
 </head>
 <body>
     <div id="content">
@@ -18,7 +18,6 @@
                     <div id="address"></div>
                     <div id="details">
                         <div id="host"></div>
-                        <div id="length"></div>
                     </div>
                 </div>
                 <a id="donate" class="btn" href="https://github.com/schmich/crypto-address-visualizer#donate" target="_blank">Donate</a>
@@ -29,7 +28,10 @@
                 <img id="identicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" height="150" width="150">
                 <div id="qrcode" height="150" width="150"></div>
             </div>
-            <div id="checksum"><span>crc32</span></div>
+            <div id="checksum-length">
+                <div id="checksum" class="digits"><span>crc32</span></div>
+                <div id="length" class="digits"><span>length</span></div>
+            </div>
         </div>
     </div>
     <script src="sha3.js" integrity="sha256-E1kKIBshmfALdO5xHtwb33RHBdyhL0PMbvZMMrV2f6k="></script>
@@ -38,6 +40,6 @@
     <script src="jdenticon.js" integrity="sha256-j712ogY74WBwGAzEzwqcQtjZdUwYsPiUdpbyHkIk9ho="></script>
     <script src="identicon.js" integrity="sha256-4x0zDxgJry3gonD+vYLLnxYlbVo7HJwX+b15LrCs5cA="></script>
     <script src="qrcode.js" integrity="sha256-K8DfvZcAJvLTfgHAOTf9qhChGKHiO9sYDshJweYfx5I="></script>
-    <script src="visualizer.js" integrity="sha256-yxz0FhVOETMZYkV4rkasS9N9nQrVIaMtoqKfODUDS+k="></script>
+    <script src="visualizer.js" integrity="sha256-tRXlRYlpC4GvrXUTiC3YEsw2FEpru7qZsQES7v2Ge3c="></script>
 </body>
 </html>
